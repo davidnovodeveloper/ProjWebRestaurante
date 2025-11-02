@@ -24,6 +24,16 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      // webpack.config.js
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      // webpack.config.js
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       }
     ],
   },
